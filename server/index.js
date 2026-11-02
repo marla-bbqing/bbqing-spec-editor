@@ -75,7 +75,7 @@ app.get('/api/search', async (req, res) => {
       `query($q:String){ products(first:25, query:$q, sortKey:RELEVANCE){ edges{ node{
         id title handle productType
         featuredImage{ url(transform:{maxWidth:80,maxHeight:80}) }
-        variants(first:1){ edges{ node{ sku } } }
+        variants(first:50){ edges{ node{ sku } } }
         layout: metafield(namespace:"custom", key:"spec_layout"){ value }
         specs: metafield(namespace:"custom", key:"specifications"){ value }
       } } } }`,
@@ -84,7 +84,11 @@ app.get('/api/search', async (req, res) => {
     const items = data.products.edges.map(({ node }) => ({
       id: node.id, title: node.title, handle: node.handle, productType: node.productType,
       image: node.featuredImage && node.featuredImage.url,
-      sku: node.variants && node.variants.edges[0] && node.variants.edges[0].node.sku,
+      sku: (node.variants && node.variants.edges || [])
+        .map(e => e.node && e.node.sku)
+        .filter(Boolean)
+        .filter((s, i, a) => a.indexOf(s) === i)
+        .join(', '),
       spec_layout: node.layout && node.layout.value,
       rowCount: node.specs && node.specs.value ? JSON.parse(node.specs.value).length : 0,
     }));
