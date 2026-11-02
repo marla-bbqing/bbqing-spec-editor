@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BBQing · Spec Editor</title>
+  <meta name="shopify-api-key" content="__API_KEY__">
+  <script src="https://cdn.shopify.com/shopifycloud/app-bridge.js" data-api-key="__API_KEY__"></script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <strong>BBQing Spec Editor</strong>
+    <span id="status" class="status"></span>
+  </header>
+
+  <main class="wrap">
+    <!-- search -->
+    <section class="panel search">
+      <input id="q" type="search" placeholder="Search products by title or SKU…" autocomplete="off">
+      <div id="results" class="results"></div>
+    </section>
+
+    <!-- editor -->
+    <section id="editor" class="panel editor" hidden>
+      <div class="editor-head">
+        <div>
+          <h2 id="p-title">—</h2>
+          <a id="p-link" href="#" target="_blank" rel="noopener" class="muted small">View on storefront ↗</a>
+        </div>
+        <div class="layout-pick">
+          <label>Layout
+            <select id="layout"></select>
+          </label>
+        </div>
+      </div>
+      <form id="form" class="form"></form>
+      <div class="actions">
+        <button id="save" type="button" class="btn primary">Save</button>
+        <button id="cancel" type="button" class="btn">Close</button>
+        <span id="save-msg" class="save-msg"></span>
+      </div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

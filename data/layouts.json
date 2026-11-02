@@ -1,0 +1,1545 @@
+{
+  "bbq_outdoor_cooking": {
+    "slug": "bbq_outdoor_cooking",
+    "name": "BBQs & Outdoor Cooking",
+    "groups": [
+      {
+        "name": "Overview",
+        "fields": [
+          {
+            "label": "Series",
+            "type": "text",
+            "key": "series"
+          },
+          {
+            "label": "Fuel Type",
+            "type": "text",
+            "key": "fuel_type"
+          },
+          {
+            "label": "Configuration",
+            "type": "text",
+            "key": "configuration"
+          },
+          {
+            "label": "Grill Style",
+            "type": "text",
+            "key": "grill_style"
+          },
+          {
+            "label": "Cooking Capacity",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Cooking Surface",
+        "fields": [
+          {
+            "label": "Main Cooking Area",
+            "type": "text"
+          },
+          {
+            "label": "Main Cooking Area (sq in)",
+            "type": "num"
+          },
+          {
+            "label": "Warming Rack Area (sq in)",
+            "type": "num"
+          },
+          {
+            "label": "Total Cooking Area (sq in)",
+            "type": "num"
+          },
+          {
+            "label": "Cooking Grate Type",
+            "type": "text"
+          },
+          {
+            "label": "Cooking Grate Thickness",
+            "type": "text"
+          },
+          {
+            "label": "Cooking Grate Size",
+            "type": "text"
+          },
+          {
+            "label": "GBS / Cooking System Compatible",
+            "type": "bool"
+          },
+          {
+            "label": "Cooktop Material",
+            "type": "text"
+          },
+          {
+            "label": "Cooktop Thickness",
+            "type": "text"
+          },
+          {
+            "label": "Pre-Seasoned",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "Cooking Racks",
+        "fields": [
+          {
+            "label": "Number of Cooking Racks",
+            "type": "num"
+          },
+          {
+            "label": "Rack Size",
+            "type": "text"
+          },
+          {
+            "label": "Rack 1 Area (sq in)",
+            "type": "num"
+          },
+          {
+            "label": "Rack 2 Area (sq in)",
+            "type": "num"
+          },
+          {
+            "label": "Rack 3 Area (sq in)",
+            "type": "num"
+          },
+          {
+            "label": "Rack 4 Area (sq in)",
+            "type": "num"
+          },
+          {
+            "label": "Rack 5 Area (sq in)",
+            "type": "num"
+          },
+          {
+            "label": "Rack 6 Area (sq in)",
+            "type": "num"
+          }
+        ]
+      },
+      {
+        "name": "Burners & Heat",
+        "fields": [
+          {
+            "label": "Main Burner Count",
+            "type": "num"
+          },
+          {
+            "label": "Total Number of Burners",
+            "type": "num"
+          },
+          {
+            "label": "Number of Burner Zones",
+            "type": "num"
+          },
+          {
+            "label": "Main Burner BTU",
+            "type": "num"
+          },
+          {
+            "label": "Side Burner Included",
+            "type": "bool",
+            "key": "side_burner_included"
+          },
+          {
+            "label": "Side Burner Type",
+            "type": "text"
+          },
+          {
+            "label": "Side Burner BTU",
+            "type": "num"
+          },
+          {
+            "label": "Rear Burner Included",
+            "type": "bool"
+          },
+          {
+            "label": "Rear Burner Type",
+            "type": "text"
+          },
+          {
+            "label": "Rear Burner BTU",
+            "type": "num"
+          },
+          {
+            "label": "Total BTU",
+            "type": "num"
+          }
+        ]
+      },
+      {
+        "name": "Temperature & Ignition",
+        "fields": [
+          {
+            "label": "Temperature Range",
+            "type": "text"
+          },
+          {
+            "label": "Max Temperature",
+            "type": "text"
+          },
+          {
+            "label": "Ignition Type",
+            "type": "text"
+          },
+          {
+            "label": "Gas Assist Ignition",
+            "type": "bool"
+          },
+          {
+            "label": "Controller Type",
+            "type": "text"
+          },
+          {
+            "label": "PID Controller",
+            "type": "bool"
+          },
+          {
+            "label": "Smoke Mode / Enhanced Smoke Setting",
+            "type": "bool"
+          },
+          {
+            "label": "Keep Warm Mode",
+            "type": "bool"
+          },
+          {
+            "label": "Built-In Thermometer",
+            "type": "bool"
+          },
+          {
+            "label": "Thermometer Type",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Connectivity & Monitoring",
+        "fields": [
+          {
+            "label": "Wi-Fi Enabled",
+            "type": "bool",
+            "key": "wifi_enabled"
+          },
+          {
+            "label": "Bluetooth Enabled",
+            "type": "bool"
+          },
+          {
+            "label": "App Control",
+            "type": "bool"
+          },
+          {
+            "label": "Meat Probe(s) Included",
+            "type": "bool"
+          },
+          {
+            "label": "Number of Probes Included",
+            "type": "num"
+          },
+          {
+            "label": "Number of Probe Ports",
+            "type": "num"
+          },
+          {
+            "label": "Probe Port Included",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "Fuel & Feed System",
+        "fields": [
+          {
+            "label": "Pellet Hopper Capacity (lbs)",
+            "type": "num"
+          },
+          {
+            "label": "Hopper Clean-Out",
+            "type": "bool"
+          },
+          {
+            "label": "Pellet Sensor / Low Pellet Alert",
+            "type": "bool"
+          },
+          {
+            "label": "Grill Body Insulation",
+            "type": "bool"
+          },
+          {
+            "label": "Charcoal Capacity",
+            "type": "text"
+          },
+          {
+            "label": "Charcoal Rails / Baskets Included",
+            "type": "bool"
+          },
+          {
+            "label": "Ash Removal System",
+            "type": "text"
+          },
+          {
+            "label": "Top Vent Type",
+            "type": "text"
+          },
+          {
+            "label": "Bottom Vent Type",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Rotisserie & Cooking Accessories",
+        "fields": [
+          {
+            "label": "Rotisserie Included",
+            "type": "bool",
+            "key": "rotisserie_included"
+          },
+          {
+            "label": "Rotisserie Compatible",
+            "type": "bool"
+          },
+          {
+            "label": "Smoker Box Included",
+            "type": "bool"
+          },
+          {
+            "label": "Griddle Plate Included",
+            "type": "bool"
+          },
+          {
+            "label": "Heat Deflector / Indirect Cooking Accessory Included",
+            "type": "bool"
+          },
+          {
+            "label": "Water Pan / Drip Pan Included",
+            "type": "bool"
+          },
+          {
+            "label": "Warming Rack Included",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "Pizza Oven",
+        "fields": [
+          {
+            "label": "Heat-Up Time",
+            "type": "text"
+          },
+          {
+            "label": "Baking Stone Size",
+            "type": "text"
+          },
+          {
+            "label": "Baking Stone Thickness",
+            "type": "text"
+          },
+          {
+            "label": "Stone Material",
+            "type": "text"
+          },
+          {
+            "label": "Max Pizza Size",
+            "type": "text"
+          },
+          {
+            "label": "Max Clearance Above Stone",
+            "type": "text"
+          },
+          {
+            "label": "Pizzas Per Hour",
+            "type": "num"
+          },
+          {
+            "label": "Door Included",
+            "type": "bool"
+          },
+          {
+            "label": "Door Type",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Grease & Hood Management",
+        "fields": [
+          {
+            "label": "Grease Management Type",
+            "type": "text"
+          },
+          {
+            "label": "Grease Collection Location",
+            "type": "text"
+          },
+          {
+            "label": "Hood / Lid Included",
+            "type": "bool"
+          },
+          {
+            "label": "Hood Type",
+            "type": "text"
+          },
+          {
+            "label": "Wind Guard Included",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "Features & Convenience",
+        "fields": [
+          {
+            "label": "Lights Included",
+            "type": "bool"
+          },
+          {
+            "label": "Side Shelves Included",
+            "type": "bool"
+          },
+          {
+            "label": "Side Tables Included",
+            "type": "bool"
+          },
+          {
+            "label": "Tool Hooks",
+            "type": "num"
+          },
+          {
+            "label": "Wheels / Locking Casters",
+            "type": "bool"
+          },
+          {
+            "label": "Cabinet / Storage Included",
+            "type": "bool"
+          },
+          {
+            "label": "Condiment Tray Included",
+            "type": "bool"
+          },
+          {
+            "label": "Cover Included",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "Construction & Materials",
+        "fields": [
+          {
+            "label": "Body / Shell Material",
+            "type": "text"
+          },
+          {
+            "label": "Firebox Material",
+            "type": "text"
+          },
+          {
+            "label": "Burner Material",
+            "type": "text"
+          },
+          {
+            "label": "Lid Colour",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Dimensions & Weight",
+        "fields": [
+          {
+            "label": "Product Width",
+            "type": "text"
+          },
+          {
+            "label": "Product Width (Shelves Down)",
+            "type": "text"
+          },
+          {
+            "label": "Product Depth",
+            "type": "text"
+          },
+          {
+            "label": "Product Height",
+            "type": "text"
+          },
+          {
+            "label": "Product Height (Lid Open)",
+            "type": "text"
+          },
+          {
+            "label": "Product Net Weight (lbs)",
+            "type": "num"
+          },
+          {
+            "label": "Cutout Width",
+            "type": "text"
+          },
+          {
+            "label": "Cutout Depth",
+            "type": "text"
+          },
+          {
+            "label": "Cutout Height",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Compliance",
+        "fields": [
+          {
+            "label": "Assembly Required",
+            "type": "bool"
+          }
+        ]
+      }
+    ]
+  },
+  "outdoor_kitchen": {
+    "slug": "outdoor_kitchen",
+    "name": "Outdoor Kitchen",
+    "groups": [
+      {
+        "name": "Overview",
+        "fields": [
+          {
+            "label": "Series",
+            "type": "text",
+            "key": "series"
+          },
+          {
+            "label": "Component Type",
+            "type": "text",
+            "key": "component_type"
+          },
+          {
+            "label": "Compatible With",
+            "type": "text"
+          },
+          {
+            "label": "Door Size",
+            "type": "text"
+          },
+          {
+            "label": "Hinge Side",
+            "type": "text"
+          },
+          {
+            "label": "Orientation",
+            "type": "text"
+          },
+          {
+            "label": "Drawer Style",
+            "type": "text"
+          },
+          {
+            "label": "Island Style",
+            "type": "text"
+          },
+          {
+            "label": "Installation Type",
+            "type": "text",
+            "key": "installation_type"
+          },
+          {
+            "label": "Number of Modules",
+            "type": "num"
+          },
+          {
+            "label": "Modular / Expandable",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "Grill & Burners",
+        "fields": [
+          {
+            "label": "Compatible Grill Head",
+            "type": "text"
+          },
+          {
+            "label": "Grill Head Included",
+            "type": "bool"
+          },
+          {
+            "label": "Fuel Type",
+            "type": "text",
+            "key": "fuel_type"
+          },
+          {
+            "label": "Natural Gas Convertible",
+            "type": "bool"
+          },
+          {
+            "label": "Burner Type",
+            "type": "text"
+          },
+          {
+            "label": "Number of Burners",
+            "type": "num"
+          },
+          {
+            "label": "Total Number of Burners",
+            "type": "num"
+          },
+          {
+            "label": "BTU Output",
+            "type": "num"
+          },
+          {
+            "label": "Main Burner BTU",
+            "type": "num"
+          },
+          {
+            "label": "Side Burner Included",
+            "type": "bool",
+            "key": "side_burner_included"
+          },
+          {
+            "label": "Side Burner Type",
+            "type": "text"
+          },
+          {
+            "label": "Side Burner BTU",
+            "type": "num"
+          },
+          {
+            "label": "Rear Burner Included",
+            "type": "bool"
+          },
+          {
+            "label": "Rear Burner Type",
+            "type": "text"
+          },
+          {
+            "label": "Rear Burner BTU",
+            "type": "num"
+          },
+          {
+            "label": "Total BTU",
+            "type": "num"
+          },
+          {
+            "label": "Ignition Type",
+            "type": "text"
+          },
+          {
+            "label": "Temperature Range",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Cooking Surface",
+        "fields": [
+          {
+            "label": "Cooking Grate Type",
+            "type": "text"
+          },
+          {
+            "label": "Cooking Grate Thickness",
+            "type": "text"
+          },
+          {
+            "label": "Main Cooking Area",
+            "type": "text"
+          },
+          {
+            "label": "Main Cooking Area (sq in)",
+            "type": "num"
+          },
+          {
+            "label": "Warming Rack Included",
+            "type": "bool"
+          },
+          {
+            "label": "Rotisserie Included",
+            "type": "bool",
+            "key": "rotisserie_included"
+          },
+          {
+            "label": "Rotisserie Type",
+            "type": "text"
+          },
+          {
+            "label": "Smoker Box Included",
+            "type": "bool"
+          },
+          {
+            "label": "Cooking Surface Material",
+            "type": "text"
+          },
+          {
+            "label": "Burner Material",
+            "type": "text"
+          },
+          {
+            "label": "Lid / Cover Included",
+            "type": "bool"
+          },
+          {
+            "label": "Lights Included",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "Countertop & Cabinetry",
+        "fields": [
+          {
+            "label": "Countertop Material",
+            "type": "text"
+          },
+          {
+            "label": "Countertop Colour",
+            "type": "text"
+          },
+          {
+            "label": "Cabinet Material",
+            "type": "text"
+          },
+          {
+            "label": "Cabinet Finish",
+            "type": "text"
+          },
+          {
+            "label": "Number of Doors",
+            "type": "num"
+          },
+          {
+            "label": "Number of Drawers",
+            "type": "num"
+          },
+          {
+            "label": "Number of Bins",
+            "type": "num"
+          },
+          {
+            "label": "Bin Capacity",
+            "type": "text"
+          },
+          {
+            "label": "Drawer Type",
+            "type": "text"
+          },
+          {
+            "label": "Storage Drawers Included",
+            "type": "bool"
+          },
+          {
+            "label": "Propane Tank Drawer Included",
+            "type": "bool"
+          },
+          {
+            "label": "Shelf Included",
+            "type": "bool"
+          },
+          {
+            "label": "Lock Included",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "Refrigeration & Beverage",
+        "fields": [
+          {
+            "label": "Refrigerator Included",
+            "type": "bool",
+            "key": "refrigerator_included"
+          },
+          {
+            "label": "Refrigerator Capacity",
+            "type": "text"
+          },
+          {
+            "label": "Refrigerator Type",
+            "type": "text"
+          },
+          {
+            "label": "Refrigerator Cut-Out",
+            "type": "text"
+          },
+          {
+            "label": "Temperature Range",
+            "type": "text"
+          },
+          {
+            "label": "Interior Lighting",
+            "type": "bool"
+          },
+          {
+            "label": "Interior Lighting Type",
+            "type": "text"
+          },
+          {
+            "label": "Ice Maker Included",
+            "type": "bool"
+          },
+          {
+            "label": "Ice Production (per day)",
+            "type": "text"
+          },
+          {
+            "label": "Ice Storage Capacity",
+            "type": "text"
+          },
+          {
+            "label": "Ice Type",
+            "type": "text"
+          },
+          {
+            "label": "Drain Type",
+            "type": "text"
+          },
+          {
+            "label": "Refrigerant",
+            "type": "text"
+          },
+          {
+            "label": "Door Style",
+            "type": "text"
+          },
+          {
+            "label": "Self-Cleaning",
+            "type": "bool"
+          },
+          {
+            "label": "Water Filter Included",
+            "type": "bool"
+          },
+          {
+            "label": "Energy Star Certified",
+            "type": "bool"
+          },
+          {
+            "label": "Certification",
+            "type": "text"
+          },
+          {
+            "label": "Beverage Center Included",
+            "type": "bool"
+          },
+          {
+            "label": "Bottle Opener Included",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "Features & Convenience",
+        "fields": [
+          {
+            "label": "Sink Included",
+            "type": "bool",
+            "key": "sink_included"
+          },
+          {
+            "label": "Side Shelves Included",
+            "type": "bool"
+          },
+          {
+            "label": "Wheels / Locking Casters",
+            "type": "bool"
+          },
+          {
+            "label": "Leveling Feet Included",
+            "type": "bool"
+          },
+          {
+            "label": "Assembly Required",
+            "type": "bool"
+          },
+          {
+            "label": "Cover Included",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "Sink & Faucet",
+        "fields": [
+          {
+            "label": "Number of Basins",
+            "type": "num"
+          },
+          {
+            "label": "Sink Shape",
+            "type": "text"
+          },
+          {
+            "label": "Basin Width",
+            "type": "text"
+          },
+          {
+            "label": "Basin Length",
+            "type": "text"
+          },
+          {
+            "label": "Basin Depth",
+            "type": "text"
+          },
+          {
+            "label": "Drain Placement",
+            "type": "text"
+          },
+          {
+            "label": "Faucet Included",
+            "type": "bool"
+          },
+          {
+            "label": "Faucet Type",
+            "type": "text"
+          },
+          {
+            "label": "Valve Type",
+            "type": "text"
+          },
+          {
+            "label": "Water Type",
+            "type": "text"
+          },
+          {
+            "label": "Swivel Spout",
+            "type": "bool"
+          },
+          {
+            "label": "Strainer Included",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "Construction & Materials",
+        "fields": [
+          {
+            "label": "Finish",
+            "type": "text"
+          },
+          {
+            "label": "Frame Material",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Dimensions & Weight",
+        "fields": [
+          {
+            "label": "Total Width",
+            "type": "text"
+          },
+          {
+            "label": "Total Depth",
+            "type": "text"
+          },
+          {
+            "label": "Total Height",
+            "type": "text"
+          },
+          {
+            "label": "Grill Unit Width",
+            "type": "text"
+          },
+          {
+            "label": "Left Cabinet Width",
+            "type": "text"
+          },
+          {
+            "label": "Right Cabinet Width",
+            "type": "text"
+          },
+          {
+            "label": "Product Width",
+            "type": "text"
+          },
+          {
+            "label": "Product Depth",
+            "type": "text"
+          },
+          {
+            "label": "Product Height",
+            "type": "text"
+          },
+          {
+            "label": "Product Net Weight (lbs)",
+            "type": "num"
+          },
+          {
+            "label": "Cutout Width",
+            "type": "text"
+          },
+          {
+            "label": "Cutout Depth",
+            "type": "text"
+          },
+          {
+            "label": "Cutout Height",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  },
+  "fireplaces_patio": {
+    "slug": "fireplaces_patio",
+    "name": "Fireplaces & Patio",
+    "groups": [
+      {
+        "name": "Overview",
+        "fields": [
+          {
+            "label": "Series",
+            "type": "text",
+            "key": "series"
+          },
+          {
+            "label": "Product Type",
+            "type": "text",
+            "key": "product_type"
+          },
+          {
+            "label": "Style",
+            "type": "text"
+          },
+          {
+            "label": "Fuel Type",
+            "type": "text",
+            "key": "fuel_type"
+          },
+          {
+            "label": "Heat Source",
+            "type": "text",
+            "key": "heat_source"
+          }
+        ]
+      },
+      {
+        "name": "Heating Performance",
+        "fields": [
+          {
+            "label": "Ignition Type",
+            "type": "text"
+          },
+          {
+            "label": "Efficiency (%)",
+            "type": "num"
+          },
+          {
+            "label": "Heating Space (sq ft)",
+            "type": "num",
+            "key": "heating_space_sqft"
+          },
+          {
+            "label": "Coverage Area (sq ft)",
+            "type": "num"
+          },
+          {
+            "label": "Electric BTUs",
+            "type": "num"
+          },
+          {
+            "label": "Gas Fireplace BTUs",
+            "type": "num"
+          },
+          {
+            "label": "BTU Output",
+            "type": "num"
+          },
+          {
+            "label": "Heat Settings",
+            "type": "num"
+          },
+          {
+            "label": "Heat Output Location",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Flame & Display",
+        "fields": [
+          {
+            "label": "Viewing Width",
+            "type": "text"
+          },
+          {
+            "label": "Viewing Height",
+            "type": "text"
+          },
+          {
+            "label": "Fuel Bed / Media",
+            "type": "text"
+          },
+          {
+            "label": "Bulb Type",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Electrical",
+        "fields": [
+          {
+            "label": "Volts",
+            "type": "text"
+          },
+          {
+            "label": "Amps",
+            "type": "text"
+          },
+          {
+            "label": "Watts",
+            "type": "num"
+          },
+          {
+            "label": "Wiring",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Installation & Mounting",
+        "fields": [
+          {
+            "label": "Installation Type",
+            "type": "text",
+            "key": "installation_type"
+          },
+          {
+            "label": "Mounting Options",
+            "type": "text"
+          },
+          {
+            "label": "Trim Options",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Controls & Connectivity",
+        "fields": [
+          {
+            "label": "Remote Control Options",
+            "type": "text"
+          },
+          {
+            "label": "Wi-Fi Enabled",
+            "type": "bool",
+            "key": "wifi_enabled"
+          },
+          {
+            "label": "Bluetooth Enabled",
+            "type": "bool"
+          },
+          {
+            "label": "App Control",
+            "type": "bool"
+          },
+          {
+            "label": "Voice Control Compatible",
+            "type": "bool"
+          },
+          {
+            "label": "Built-In Speakers",
+            "type": "bool"
+          },
+          {
+            "label": "ECO Mode",
+            "type": "bool"
+          },
+          {
+            "label": "Boost Mode",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "Lighting",
+        "fields": [
+          {
+            "label": "Integrated Lighting",
+            "type": "bool"
+          },
+          {
+            "label": "Light Type",
+            "type": "text"
+          },
+          {
+            "label": "LED Colour Temperature",
+            "type": "text"
+          },
+          {
+            "label": "Light Output",
+            "type": "text"
+          },
+          {
+            "label": "Light Dimming",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Patio Heater",
+        "fields": [
+          {
+            "label": "Run Time Per Tank",
+            "type": "text"
+          },
+          {
+            "label": "Tank Size / Capacity",
+            "type": "text"
+          },
+          {
+            "label": "Pole / Stand Height",
+            "type": "text"
+          },
+          {
+            "label": "Reflector Diameter",
+            "type": "text"
+          },
+          {
+            "label": "IP Rating",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Fire Table / Fire Pit",
+        "fields": [
+          {
+            "label": "Tabletop Surface",
+            "type": "text"
+          },
+          {
+            "label": "Tabletop Dimensions",
+            "type": "text"
+          },
+          {
+            "label": "Fire Bowl Dimensions",
+            "type": "text"
+          },
+          {
+            "label": "Fuel Bed Material",
+            "type": "text"
+          },
+          {
+            "label": "Burner Shape",
+            "type": "text"
+          },
+          {
+            "label": "Burner Material",
+            "type": "text"
+          },
+          {
+            "label": "Wind Guard Included",
+            "type": "bool"
+          },
+          {
+            "label": "Wind Guard Type",
+            "type": "text"
+          },
+          {
+            "label": "Propane Tank Storage",
+            "type": "bool"
+          },
+          {
+            "label": "Weight Capacity",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Safety",
+        "fields": [
+          {
+            "label": "Auto Shut-Off",
+            "type": "bool"
+          },
+          {
+            "label": "Tip-Over Protection",
+            "type": "bool"
+          },
+          {
+            "label": "Energy Star Certified",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "Features & Convenience",
+        "fields": [
+          {
+            "label": "Lid / Cover Included",
+            "type": "bool"
+          },
+          {
+            "label": "Wheels / Locking Casters",
+            "type": "bool"
+          },
+          {
+            "label": "Assembly Required",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "name": "Construction & Materials",
+        "fields": [
+          {
+            "label": "Body Material",
+            "type": "text"
+          },
+          {
+            "label": "Finish / Colour",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Dimensions & Weight",
+        "fields": [
+          {
+            "label": "Framing Width",
+            "type": "text"
+          },
+          {
+            "label": "Framing Height",
+            "type": "text"
+          },
+          {
+            "label": "Framing Depth",
+            "type": "text"
+          },
+          {
+            "label": "Product Width",
+            "type": "text"
+          },
+          {
+            "label": "Product Depth",
+            "type": "text"
+          },
+          {
+            "label": "Product Height",
+            "type": "text"
+          },
+          {
+            "label": "Product Net Weight (lbs)",
+            "type": "num"
+          }
+        ]
+      },
+      {
+        "name": "Compliance",
+        "fields": [
+          {
+            "label": "CSA / ETL / UL Certified",
+            "type": "bool"
+          }
+        ]
+      }
+    ]
+  },
+  "accessories_parts": {
+    "slug": "accessories_parts",
+    "name": "Accessories & Parts",
+    "groups": [
+      {
+        "name": "Details",
+        "fields": [
+          {
+            "label": "Series",
+            "type": "text"
+          },
+          {
+            "label": "Type",
+            "type": "text"
+          },
+          {
+            "label": "Part Number (OEM)",
+            "type": "text"
+          },
+          {
+            "label": "Compatible Models",
+            "type": "text"
+          },
+          {
+            "label": "Fits Grill Size",
+            "type": "text"
+          },
+          {
+            "label": "Material",
+            "type": "text"
+          },
+          {
+            "label": "Fuel Type",
+            "type": "text"
+          },
+          {
+            "label": "BTU Output",
+            "type": "num"
+          },
+          {
+            "label": "Sold As / Pack Size",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Thermometer",
+        "fields": [
+          {
+            "label": "Temperature Range",
+            "type": "text"
+          },
+          {
+            "label": "Accuracy",
+            "type": "text"
+          },
+          {
+            "label": "Response Time",
+            "type": "text"
+          },
+          {
+            "label": "Sensor Type",
+            "type": "text"
+          },
+          {
+            "label": "Display Resolution",
+            "type": "text"
+          },
+          {
+            "label": "Probe Length",
+            "type": "text"
+          },
+          {
+            "label": "Water Resistance / IP Rating",
+            "type": "text"
+          },
+          {
+            "label": "Battery Type",
+            "type": "text"
+          },
+          {
+            "label": "Battery Life",
+            "type": "text"
+          },
+          {
+            "label": "NSF Certified",
+            "type": "bool"
+          },
+          {
+            "label": "Calibration",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Controller",
+        "fields": [
+          {
+            "label": "Channels",
+            "type": "text"
+          },
+          {
+            "label": "Max Load per Channel",
+            "type": "text"
+          },
+          {
+            "label": "Connectivity",
+            "type": "text"
+          },
+          {
+            "label": "Voice Control",
+            "type": "text"
+          },
+          {
+            "label": "IP Rating",
+            "type": "text"
+          },
+          {
+            "label": "Operating Temperature",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Dimensions & Weight",
+        "fields": [
+          {
+            "label": "Product Width",
+            "type": "text"
+          },
+          {
+            "label": "Product Depth",
+            "type": "text"
+          },
+          {
+            "label": "Product Height",
+            "type": "text"
+          },
+          {
+            "label": "Product Net Weight (lbs)",
+            "type": "num"
+          }
+        ]
+      }
+    ]
+  },
+  "rubs_sauces": {
+    "slug": "rubs_sauces",
+    "name": "Rubs & Sauces",
+    "groups": [
+      {
+        "name": "Details",
+        "fields": [
+          {
+            "label": "Type",
+            "type": "text"
+          },
+          {
+            "label": "Net Weight / Size",
+            "type": "text"
+          },
+          {
+            "label": "Heat Level",
+            "type": "text"
+          },
+          {
+            "label": "Flavour Profile",
+            "type": "text"
+          },
+          {
+            "label": "Best On",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "name": "Ingredients & Dietary",
+        "fields": [
+          {
+            "label": "Ingredients",
+            "type": "text"
+          },
+          {
+            "label": "Dietary",
+            "type": "text"
+          },
+          {
+            "label": "Allergens",
+            "type": "text"
+          },
+          {
+            "label": "Made In",
+            "type": "text"
+          }
+        ]
+      }
+    ]
+  }
+}
